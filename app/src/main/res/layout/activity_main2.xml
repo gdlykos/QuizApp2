@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Quiz"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are in prison with Barry and Albert. The 3 of you are in a line looking straight ahead. You're in front, then Barry, then Albert.
+A guard has 3 black and 2 white hats. He randomly puts one on each of your heads. Albert can see your hat and Barry's, Barry can see yours, and you can see no one's. None of you know what colour you have on your own head.
+The guard says, ''If anyone can tell me with 100% certainty the colour of your own hat, uttering no one else's, you may all go free.''
+He tells Albert to answer first. Albert is a very honest and intelligent person, but he says, ''I don't know, there's no way of knowing for sure.'' The guard then asks Barry. Barry is also intelligent and rational, but he also cannot tell.
+He comes to you, and you say the colour of your hat with 100% certainty. The guard has no choice but to release all 3 of you.
+What colour hat were you wearing?"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_margin="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/white_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/black_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:onClick="next"
+            android:text="Next" />
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_margin="10dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
