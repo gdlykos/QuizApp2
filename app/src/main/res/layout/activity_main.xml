@@ -15,27 +15,20 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            style="@style/CustomTextStyle"
             android:text="@string/titleText"
-            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/name_edit_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:hint="@string/editNameText"
-            android:inputType="textCapWords" />
+            android:inputType="textCapWords"
+            style="@style/CustomTextStyle"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question1"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question1" />
 
         <ImageView
             android:id="@+id/comet_image_view"
@@ -45,223 +38,155 @@
             android:scaleType="fitCenter"
             android:src="@drawable/comet_image" />
 
-
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            style="@style/CustomVerticalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/star_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on1AnswerRadioButtonClicked"
                 android:text="@string/answer1.1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle"/>
 
             <RadioButton
                 android:id="@+id/asteroid_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on1AnswerRadioButtonClicked"
                 android:text="@string/answer1.2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle"/>
 
             <RadioButton
                 android:id="@+id/comet_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on1AnswerRadioButtonClicked"
                 android:text="@string/answer1.3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/moon_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on1AnswerRadioButtonClicked"
                 android:text="@string/answer1.4"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
         </RadioGroup>
 
-
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question2"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question2" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            style="@style/CustomVerticalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/sound_waves_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on2AnswerRadioButtonClicked"
                 android:text="@string/answer2.1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/radio_waves_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on2AnswerRadioButtonClicked"
                 android:text="@string/answer2.2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/gravity_waves_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on2AnswerRadioButtonClicked"
                 android:text="@string/answer2.3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/light_waves_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on2AnswerRadioButtonClicked"
                 android:text="@string/answer2.4"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question3"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question3" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            style="@style/CustomVerticalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/crust_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on3AnswerRadioButtonClicked"
                 android:text="@string/answer3.1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/mantle_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on3AnswerRadioButtonClicked"
                 android:text="@string/answer3.2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/core_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on3AnswerRadioButtonClicked"
                 android:text="@string/answer3.3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question4"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question4" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            style="@style/CustomVerticalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/rotation_axis_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on4AnswerRadioButtonClicked"
                 android:text="@string/answer4.1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/gravity_moon_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on4AnswerRadioButtonClicked"
                 android:text="@string/answer4.2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/gravity_sun_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on4AnswerRadioButtonClicked"
                 android:text="@string/answer4.3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question5"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question5" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            style="@style/CustomVerticalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/brightness_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on5AnswerRadioButtonClicked"
                 android:text="@string/answer5.1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/time_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on5AnswerRadioButtonClicked"
                 android:text="@string/answer5.2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/distance_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on5AnswerRadioButtonClicked"
                 android:text="@string/answer5.3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/weight_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on5AnswerRadioButtonClicked"
                 android:text="@string/answer5.4"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question6"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question6" />
 
         <ImageView
             android:id="@+id/magnifying_image_view"
@@ -272,147 +197,104 @@
             android:src="@drawable/magnifying_glass" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            style="@style/CustomHorizontalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/magnifying1_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="on6AnswerRadioButtonClicked"
                 android:text="1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/magnifying2_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="on6AnswerRadioButtonClicked"
                 android:text="2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/magnifying3_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="on6AnswerRadioButtonClicked"
                 android:text="3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/magnifying4_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="on6AnswerRadioButtonClicked"
                 android:text="4"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question7"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question7" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            style="@style/CustomVerticalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/earthquake_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on7AnswerRadioButtonClicked"
                 android:text="@string/answer7.1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/hurricane_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on7AnswerRadioButtonClicked"
                 android:text="@string/answer7.2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/tsunami_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on7AnswerRadioButtonClicked"
                 android:text="@string/answer7.3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/solar_radiation_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on7AnswerRadioButtonClicked"
                 android:text="@string/answer7.4"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
         </RadioGroup>
 
-
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question8"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question8" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            style="@style/CustomVerticalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/sodium_chloride_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on8AnswerRadioButtonClicked"
                 android:text="@string/answer8.1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/uranium_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on8AnswerRadioButtonClicked"
                 android:text="@string/answer8.2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/nitrogean_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on8AnswerRadioButtonClicked"
                 android:text="@string/answer8.3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/carbon_dioxide_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on8AnswerRadioButtonClicked"
                 android:text="@string/answer8.4"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question9"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question9" />
 
         <ImageView
             android:id="@+id/polio_vaccine_image_view"
@@ -423,51 +305,36 @@
             android:src="@drawable/polio_vaccine" />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            style="@style/CustomVerticalRadioGroupStyle">
 
             <RadioButton
                 android:id="@+id/marieCurie_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on9AnswerRadioButtonClicked"
                 android:text="@string/answer9.10.1"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/isaacNewton_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on9AnswerRadioButtonClicked"
                 android:text="@string/answer9.2"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/albertEinstein_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on9AnswerRadioButtonClicked"
                 android:text="@string/answer9.3"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
 
             <RadioButton
                 android:id="@+id/jonasSalk_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="on9AnswerRadioButtonClicked"
                 android:text="@string/answer9.4"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CustomRadioButtonStyle" />
         </RadioGroup>
 
-
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/question10"
-            android:textAppearance="?android:textAppearanceMedium" />
+            style="@style/CustomTextStyle"
+            android:text="@string/question10" />
 
         <CheckBox
             android:id="@+id/marieCurie_checkbox"
@@ -530,7 +397,6 @@
                 android:text="@string/exit" />
 
         </LinearLayout>
-
 
     </LinearLayout>
 

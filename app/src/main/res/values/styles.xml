@@ -8,6 +8,7 @@
         <item name="colorAccent">#448AFF</item>
         <item name="colorButtonNormal">#448AFF</item>
         <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <!-- Base text style -->
@@ -15,6 +16,28 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!-- Base Vertical RadioGroup style -->
+    <style name="CustomVerticalRadioGroupStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Base Horizontal RadioGroup style -->
+    <style name="CustomHorizontalRadioGroupStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Base RadioButton - Checkbox style -->
+    <style name="CustomRadioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
 </resources>
